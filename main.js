@@ -7,14 +7,14 @@ let subtitle = document.querySelector('h2');
 console.log(box)
 console.log(button)
 
-box.forEach(function(item){
-    item.addEventListener("mouseenter", function(){
-        item.classList.add("over");
-        item.addEventListener("mouseout", function(){
-            item.classList.remove('over')
-        })
-    })
-})
+//box.forEach(function(item){
+  //  item.addEventListener("mouseenter", function(){
+    //    item.classList.add("over");
+      //  item.addEventListener("mouseout", function(){
+        //    item.classList.remove('over')
+        //})
+    //})
+// })
 
 // button.addEventListener("click", function(){
 //     tableau.classList.toggle("click");
