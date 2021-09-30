@@ -99,3 +99,7 @@ button:hover {
     padding: 15px;
     transition: ease-in-out 0.4s;
 }
+
+iframe {
+    margin: 30px 0;
+}
