@@ -16,9 +16,9 @@ box.forEach(function(item){
     })
 })
 
-button.addEventListener("click", function(){
-    tableau.classList.toggle("click");
-})
+// button.addEventListener("click", function(){
+//     tableau.classList.toggle("click");
+// })
 
 title.addEventListener('click', function(){
     subtitle.insertAdjacentElement('afterend', title);
