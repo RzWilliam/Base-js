@@ -110,3 +110,10 @@ iframe {
     font-weight: bold;
     cursor: none;
 }
+
+footer {
+    background-color:#4C35E0;
+    color:white;
+    padding: 40px;
+    margin-top:40px;
+}
