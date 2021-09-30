@@ -12,10 +12,12 @@ body {
 
 h1{
     font-size: 32px;
+    cursor: pointer;
 }
 
 h2{
     font-size: 14px;
+    cursor: pointer;
 }
 
 header {
@@ -30,17 +32,24 @@ header {
     max-width: auto;
     vertical-align: top;
     padding: 30px 200px;
-    margin-top: 50px;
+    margin-top: 80px;
     border-radius: 10px;
 }
 
+.exo2 {
+    background-color: white;
+    margin-top: 100px;
+    padding: 50px 20px;
+}
+
 ul {
-    list-style: none;
     margin:10px 0;
 }
 
 .random.over{
-    background-color: blue;
+    background-color: #4C35E0;
+    opacity: 0.8;
+    color: white;
 }
 
 ul.click{
@@ -82,6 +91,11 @@ button:hover {
 
 .random {
     width: 30%;
-    background-color: bisque;
     margin: 10px;
+    border-style: solid;
+    border-width:1px ;
+    border-color: #4C35E0;
+    border-radius: 10px;
+    padding: 15px;
+    transition: ease-in-out 0.4s;
 }
