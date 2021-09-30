@@ -39,6 +39,18 @@ ul {
     margin:10px 0;
 }
 
+.random.over{
+    background-color: blue;
+}
+
+ul.click{
+    display: none;
+}
+
+h1, h2{
+    cursor: pointer;
+}
+
 button {
     background-color: #4C35E0; 
     border: none;
