@@ -8,8 +8,11 @@ console.log(box)
 console.log(button)
 
 box.forEach(function(item){
-    item.addEventListener("mouseover", function(){
-        item.classList.toggle("over");
+    item.addEventListener("mouseenter", function(){
+        item.classList.add("over");
+        item.addEventListener("mouseout", function(){
+            item.classList.remove('over')
+        })
     })
 })
 
