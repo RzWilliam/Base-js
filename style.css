@@ -105,10 +105,19 @@ iframe {
 }
 
 .exo_title{
-    margin: 20px 0 0 0;
+    margin: 40px 0 20px 0;
     font-size: 24px;
     font-weight: bold;
-    cursor: none;
+    cursor: text;
+}
+
+hr {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 40px;
+    height: 1.5px;
+    background-color: #ccc6c6;
+    border: none;
 }
 
 footer {
@@ -138,3 +147,10 @@ footer p{
 .text_exo p span{
     color: #4C35E0;
 }
+
+pre {
+    border-radius: 7px;
+    border-left: solid 7px;
+    border-color: #F7DF30;
+}
+
