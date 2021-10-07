@@ -48,6 +48,34 @@ let button = document.querySelector('button');</code></pre>
 
     <h2 class="exo_title">Le cas du hover :</h2>
     <hr>
+    <div class="text_exo">
+        <p>
+            Tout d'abord, on commence par créer une variable avec <span>let</span>, qui selectionne les blocs :
+        </p>
+        <pre><code class="language-js">let box = document.querySelectorAll('.random');</code></pre>
+        <p>
+            Ici le <span>querySelectorAll</span> permet de retourner tout les éléments qui correspondent à l'objet correspondant.
+        </p>
+        <pre><code class="language-js">box.forEach(function(item){</code></pre>
+        <p>
+            La méthode <span>forEach</span> permet permet d'exécuter une fonction donnée sur chaque élément de <span>box</span>.
+        </p>
+        <pre><code class="language-js">    item.addEventListener("mouseenter", function(){
+        item.classList.add("over");
+        </code></pre>
+        <p>
+            On définit donc la fonction <span>item</span> qui grâce au déclencheur <span>mouseenter</span>, se déclenchera à chaque fois que la souris rentrera dans la zone de l'élément. Ensuite, <span>classList.add</span> permet d'ajouter la classe citée à l'élément.
+        </p>
+        <pre><code class="language-js">        item.addEventListener("mouseout", function(){
+            item.classList.remove('over');
+        })
+    })
+})</code></pre>
+        <p>
+            Enfin, on définit la fonction qui a pour déclencheur <span>mouseout</span>, se déclenchera lorsque la souris quittera la zone de l'élément, puis, grâce à <span>classList.remove</span>, la classe précédemment ajoutée est retirée.<br>Voici donc un exemple ci-dessous:
+        </p>
+        
+    </div>
     <iframe height="450" style="width: 50%;" scrolling="no" title="" src="https://codepen.io/romain-malaterre/embed/YzQgGpy?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
         See the Pen <a href="https://codepen.io/romain-malaterre/pen/YzQgGpy">
     </a> by Romain Malaterre (<a href="https://codepen.io/romain-malaterre">@romain-malaterre</a>)
@@ -56,6 +84,29 @@ let button = document.querySelector('button');</code></pre>
 
     <h2 class="exo_title">Avec insert.adjacent.element  :</h2>
     <hr>
+    <div class="text_exo">
+        <p>
+            Tout d'abord, on commence par créer deux variables avec <span>let</span>, qui selectionne le titre et le sous-titre :
+        </p>
+        <pre><code class="language-js">let title = document.querySelector('h1');
+let subtitle = document.querySelector('h2');</code></pre>
+        <p>
+            Ensuite on définit la méthode <span>addEventListener</span> avec comme déclencheur <span>click</span> :
+        </p>
+        <pre><code class="language-js">title.addEventListener('click', function(){
+    subtitle.insertAdjacentElement('afterend', title);</code></pre>
+        <p>
+            Ici, <span>insertAdjacentElement</span> permet d'inserer le <span>title</span> après le <span>subtitle</span>, <span>afterend</span> signifiant après .
+        </p>
+        <pre><code class="language-js">    subtitle.addEventListener("click", function(){
+        title.insertAdjacentElement('afterend', subtitle)
+    })
+})</code></pre>
+        <p>
+           Enfin, en inversant <span>title</span> et <span>subtitle</span>, en cliquant sur le <span>subtitle</span>, on retrouve la forme de base. <br>Voici donc un exemple ci-dessous:
+        </p>
+        
+    </div>
     <iframe height="450" style="width: 50%;" scrolling="no" title="title switch" src="https://codepen.io/romain-malaterre/embed/XWgGjeG?default-tab=" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
         See the Pen <a href="https://codepen.io/romain-malaterre/pen/XWgGjeG">
         title switch</a> by Romain Malaterre (<a href="https://codepen.io/romain-malaterre">@romain-malaterre</a>)
