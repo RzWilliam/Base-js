@@ -121,3 +121,20 @@ footer {
 footer p{
     margin: 0 auto;
 }
+
+.text_exo{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.text_exo p {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.text_exo p span{
+    color: #4C35E0;
+}
