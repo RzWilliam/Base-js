@@ -117,3 +117,7 @@ footer {
     padding: 40px;
     margin-top:40px;
 }
+
+footer p{
+    margin: 0 auto;
+}
