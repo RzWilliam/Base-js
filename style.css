@@ -154,3 +154,46 @@ pre {
     border-color: #F7DF30;
 }
 
+.success {
+    border: solid 3px; 
+    border-color: #4C35E0;
+    width: 20%;
+    height: auto;
+    padding: 40px;
+    margin:0 auto;
+    border-radius: 15px; 
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.success p {
+    font-size: 18px;
+}
+
+i {
+    font-size: 120px;
+    color: #4C35E0;
+    margin-bottom: 20px;
+    transition: 1s ease-in-out;
+}
+
+.success:hover i{
+    color:#F7DF30
+}
+.success:hover {
+    transform: rotate3D(1, 1, 1, 360deg);
+    border-color: #F7DF30;
+}
+
+
+
+
+
+
