@@ -3,6 +3,7 @@ let button = document.querySelector('button');
 let tableau = document.querySelector('ul');
 let title = document.querySelector('h1');
 let subtitle = document.querySelector('h2');
+let to_top = document.querySelector('.top');
 
 console.log(box)
 console.log(button)
@@ -25,4 +26,8 @@ title.addEventListener('click', function(){
     subtitle.addEventListener("click", function(){
         title.insertAdjacentElement('afterend', subtitle)
     })
+})
+
+to_top.addEventListener("click", function(){
+  window.scrollTo({top: 0, behavior: 'smooth'})
 })
