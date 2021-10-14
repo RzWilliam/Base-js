@@ -192,8 +192,14 @@ i {
     border-color: #F7DF30;
 }
 
-
-
-
-
-
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+    padding: 10px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
